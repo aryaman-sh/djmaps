@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Map</title>
+
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js"></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css' rel='stylesheet' />
+
+
+
+
+  </head>
+  <body>
+   <h1>Map marking:</h1>
+   <li>Hauz khas apartments</li>
+   <li>121,sfs</li>
+   <li>Hauz khas market</li>
+  <div id='map' width="100%" style='height:900px'></div>
+   <script>
+
+    mapboxgl.accessToken = 'pk.eyJ1IjoiYXJ5YW1hbjQxNTIiLCJhIjoiY2szeTE5NHB5MWZvbDNtbzF1azV2aTAyNCJ9.VX1AzRhPnccvg-ul4h1V2Q';
+    var map = new mapboxgl.Map({
+     container: 'map',
+     style: 'mapbox://styles/aryaman4152/ck3y33zbw1nll1cqqcag0wttn',
+        <!-- cooridnates for the map center lonfitude,latitude -->
+        center: [77.209, 28.553],
+        zoom : 15
+    });
+    <!-- adding navigation tools to the map -->
+    map.addControl(new mapboxgl.NavigationControl());
+   </script>
+  </body>
+</html>

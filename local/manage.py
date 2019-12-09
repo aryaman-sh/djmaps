@@ -1,0 +1,1 @@
+/home/aryaman/djmaps/manage.py
