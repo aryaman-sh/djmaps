@@ -1,34 +1,102 @@
+
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Map</title>
+<head>
+<meta charset="utf-8" />
+<title>MAP</title>
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+<script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.6.0/mapbox-gl.js"></script>
+<link href="https://api.tiles.mapbox.com/mapbox-gl-js/v1.6.0/mapbox-gl.css" rel="stylesheet" />
+<style>
+	body { margin: 0; padding: 0; }
 
+	#map { position: absolute; top: 200px; bottom: 0; width: 100%; };
+</style>
+</head>
+<body>
+<h1>Map:</h1>
+<h2>pointer location:</h2>
+</body>
 
-    <script src="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js"></script>
-    <link href='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css' rel='stylesheet' />
+<body>
 
-
-
-
-  </head>
-  <body>
-   <h1>Map marking:</h1>
-   <li>Hauz khas apartments</li>
-   <li>121,sfs</li>
-   <li>Hauz khas market</li>
-  <div id='map' width="100%" style='height:900px'></div>
-   <script>
-
-    mapboxgl.accessToken = 'pk.eyJ1IjoiYXJ5YW1hbjQxNTIiLCJhIjoiY2szeTE5NHB5MWZvbDNtbzF1azV2aTAyNCJ9.VX1AzRhPnccvg-ul4h1V2Q';
+<style type="text/css">
+    #info {
+        display: block;
+        position: relative;
+        margin: 0px auto;
+        width: 50%;
+        padding: 10px;
+        border: none;
+        border-radius: 3px;
+        font-size: 12px;
+        text-align: center;
+        color: #222222;
+        background: #88ee66;
+    }
+</style>
+<div id="map"></div>
+<pre id="info"></pre>
+<script>
+	mapboxgl.accessToken = 'pk.eyJ1IjoiYXJ5YW1hbjQxNTIiLCJhIjoiY2szeTE5NHB5MWZvbDNtbzF1azV2aTAyNCJ9.VX1AzRhPnccvg-ul4h1V2Q';
     var map = new mapboxgl.Map({
-     container: 'map',
-     style: 'mapbox://styles/aryaman4152/ck3y33zbw1nll1cqqcag0wttn',
-        <!-- cooridnates for the map center lonfitude,latitude -->
+        container: 'map', // container id
+        style: 'mapbox://styles/aryaman4152/ck3y33zbw1nll1cqqcag0wttn',
         center: [77.209, 28.553],
-        zoom : 15
+        zoom: 15 // starting zoom
     });
-    <!-- adding navigation tools to the map -->
-    map.addControl(new mapboxgl.NavigationControl());
-   </script>
-  </body>
+
+    map.on('mousemove', function(e) {
+        document.getElementById('info').innerHTML =
+        // e.point is the x, y coordinates of the mousemove event relative
+        // to the top-left corner of the map
+        JSON.stringify(e.point) +
+        '<br />' +
+        // e.lngLat is the longitude, latitude geographical position of the event
+        JSON.stringify(e.lngLat.wrap());
+    });
+</script>
+
+</body>
 </html>
+
+
+
+
+
+<!--
+{
+  "type": "Feature",
+  "properties": {
+    "1": "hauz khas appt"
+  },
+  "geometry": {
+    "coordinates": [
+      [
+        [
+          77.206618,
+          28.556518
+        ],
+        [
+          77.209173,
+          28.555319
+        ],
+        [
+          77.207616,
+          28.553244
+        ],
+        [
+          77.205586,
+          28.554358
+        ],
+        [77.206225, 28.55535],
+        [77.206618, 28.556518]
+      ]
+    ],
+    "type": "Polygon"
+  }
+}
+
+
+
+-->

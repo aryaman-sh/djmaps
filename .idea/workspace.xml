@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="81aef25e-e657-4e44-882e-181be9bc3295" name="Default Changelist" comment="" />
+    <list default="true" id="81aef25e-e657-4e44-882e-181be9bc3295" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djmaps/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/djmaps/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maps/templates/default.html" beforeDir="false" afterPath="$PROJECT_DIR$/maps/templates/default.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1UjXz2jnZXgvAWWYYBrEQBtiOBC" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -15,6 +24,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RunManager">
@@ -64,7 +74,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1575871237294</updated>
-      <workItem from="1575871239813" duration="3885000" />
+      <workItem from="1575871239813" duration="6123000" />
+      <workItem from="1575904372064" duration="284000" />
+      <workItem from="1576043822161" duration="3632000" />
     </task>
     <servers />
   </component>
@@ -76,9 +88,9 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="694" y="326" width="424" height="520" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1575871325665" />
-    <state x="573" y="406" key="com.intellij.ide.util.TipDialog" timestamp="1575871240408">
+    <state x="573" y="406" key="com.intellij.ide.util.TipDialog" timestamp="1576043857701">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="573" y="406" key="com.intellij.ide.util.TipDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1575871240408" />
+    <state x="573" y="406" key="com.intellij.ide.util.TipDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1576043857701" />
   </component>
 </project>
